@@ -50,10 +50,13 @@
     "stylelint-processor-styled-components": "1.10.0",
     "supertest": "5.0.0",
     "wait-on": "^3.2.0",
-    "yargs": "^13.2.2"
+    "yargs": "^13.2.2",
+    "yarn": "^1.22.10"
   },
   "scripts": {
+    "start": "yarn develop",
     "setup": "yarn && yarn build",
+    "install": "yarn install",
     "watch": "lerna run --stream watch --no-private",
     "build": "lerna run --stream build --no-private",
     "lint": "npm-run-all -p lint:code lint:css",
